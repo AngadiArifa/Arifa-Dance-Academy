@@ -1,0 +1,2518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arifa Dance Academy | Kurnool</title>
+
+    <meta name="description"
+          content="Arifa Dance Academy - Classical and contemporary dance education in Kurnool, Andhra Pradesh.">
+      <link rel="stylesheet" href="style.css">
+    <style>
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8f5ef;
+            color: #211d1a;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =========================================================
+           VARIABLES
+        ========================================================= */
+
+        :root {
+            --cream: #f8f5ef;
+            --cream-dark: #eee8dd;
+            --white: #ffffff;
+
+            --brown: #211d1a;
+            --brown-light: #493d35;
+
+            --maroon: #6b252b;
+            --maroon-dark: #42171b;
+
+            --gold: #b18a48;
+            --gold-light: #d4b978;
+
+            --border: #ded6ca;
+
+            --max-width: 1240px;
+        }
+
+
+        /* =========================================================
+           COMMON
+        ========================================================= */
+
+        .container {
+            width: min(1240px, 92%);
+            margin: auto;
+        }
+
+        .section {
+            padding: 110px 0;
+        }
+
+        .eyebrow {
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(38px, 5vw, 65px);
+            font-weight: 400;
+            line-height: 1.05;
+            color: var(--brown);
+        }
+
+        .section-title span {
+            color: var(--maroon);
+        }
+
+        .section-text {
+            max-width: 620px;
+            color: #665d55;
+            font-size: 16px;
+            margin-top: 22px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+
+        /* =========================================================
+           HEADER
+        ========================================================= */
+
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            color: white;
+            padding: 22px 0;
+            border-bottom: 1px solid rgba(255,255,255,.18);
+        }
+
+        .nav {
+            width: min(1240px, 92%);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            line-height: 6;
+        }
+
+        .logo-main {
+            font-family: Georgia, serif;
+            font-size: 27px;
+            letter-spacing: 3px;
+        }
+
+        .logo-sub {
+            font-size: 9px;
+            letter-spacing: 4px;
+            margin-top: 7px;
+            color: #dfc68f;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            font-size: 13px;
+        }
+
+        .nav-links a {
+            position: relative;
+            padding: 7px 0;
+            color: rgba(255,255,255,.92);
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background: var(--gold-light);
+            transition: .3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-button {
+            border: 1px solid #d9bd7e;
+            padding: 11px 20px !important;
+            color: white !important;
+        }
+
+        .nav-button:hover {
+            background: #b18a48;
+        }
+
+        .menu {
+            display: none;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+
+        .hero {
+            
+    min-height: 950px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: white;
+   
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(25,16,13,.88) 0%,
+            rgba(25,16,13,.65) 42%,
+            rgba(25,16,13,.15) 100%
+        ),
+        url("gallery-5.jpg");
+
+    background-position: center 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+} 
+    .hero-content{
+        position:absolute;
+        top:68%;
+        left:2%;
+        transform:none;
+        z-index:5
+    }
+    .hero-bottom{
+        position:absolute;
+        bottom:60px;
+        right:7%;
+        left:auto;
+        z-index:6
+    }
+     .hero-bottom{
+        position: absolute;
+        bottom: 60px;
+        right:7%; 
+        left:auto; 
+        z-index:6;
+        padding:12px 20px;
+        border:1px solid #d8b777;
+        border-radius:30px; 
+        color:#fff;
+        background:rgba(20,15,12,0.5);
+        letter-spacing:2px; 
+        font-size:12px;
+     }
+        /* =========================================================
+           TRUST BAR
+        ========================================================= */
+
+        .trust {
+            background: #211d1a;
+            color: white;
+            padding: 24px 0;
+        }
+
+        .trust-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .trust strong {
+            color: #d5b36d;
+            font-family: Georgia, serif;
+            font-size: 20px;
+        }
+
+        .trust span {
+            color: rgba(255,255,255,.68);
+            font-size: 13px;
+        }
+
+
+        /* =========================================================
+           INTRO / PRESERVING TRADITION
+        ========================================================= */
+
+        .tradition {
+            background: var(--cream);
+        }
+
+        .tradition-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 90px;
+            align-items: center;
+        }
+
+        .tradition-image {
+            position: relative;
+        }
+
+        .tradition-image img {
+            height: 850px;
+            object-fit: cover;
+        }
+
+        .image-card {
+            position: absolute;
+            right: -25px;
+            bottom: -25px;
+            background: var(--maroon);
+            color: white;
+            padding: 28px 35px;
+            min-width: 210px;
+        }
+
+        .image-card strong {
+            display: block;
+            font-family: Georgia, serif;
+            font-size: 31px;
+            font-weight: 400;
+        }
+
+        .image-card span {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #dbc28a;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 30px;
+        }
+
+        .rating-number {
+            font-family: Georgia, serif;
+            font-size: 42px;
+            color: var(--maroon);
+        }
+
+        .stars {
+            color: var(--gold);
+            letter-spacing: 3px;
+        }
+
+        .rating small {
+            display: block;
+            color: #82776e;
+        }
+
+        .tradition-copy p {
+            color: #665d55;
+            margin-top: 23px;
+            font-size: 16px;
+        }
+
+        .link-arrow {
+            display: inline-flex;
+            gap: 12px;
+            align-items: center;
+            margin-top: 30px;
+            color: var(--maroon);
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+
+        /* =========================================================
+           STATS
+        ========================================================= */
+
+        .stats {
+            background: #eee7dc;
+            border-top: 1px solid #ddd4c7;
+            border-bottom: 1px solid #ddd4c7;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .stat {
+            padding: 48px 30px;
+            text-align: center;
+            border-right: 1px solid #d5cbbb;
+        }
+
+        .stat:last-child {
+            border-right: none;
+        }
+
+        .stat strong {
+            display: block;
+            font-family: Georgia, serif;
+            font-size: 52px;
+            font-weight: 400;
+            color: var(--maroon);
+        }
+
+        .stat span {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 10px;
+            color: #756a60;
+            margin-top: 5px;
+        }
+
+
+        /* =========================================================
+           PROGRAMS
+        ========================================================= */
+
+        .programs {
+            background: white;
+        }
+
+        .heading-center {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 55px;
+        }
+
+        .heading-center .section-text {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .program {
+            background: #f7f3ec;
+            border: 1px solid #e2dace;
+            transition: .35s;
+            overflow: hidden;
+        }
+
+        .program:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 18px 45px rgba(53,38,25,.12);
+        }
+
+        .program-image {
+            height: 450px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .program-image img {
+            height: 100%;
+            object-fit: cover;
+            transition: .6s;
+        }
+
+        .program:hover .program-image img {
+            transform: scale(1.05);
+        }
+
+        .program-content {
+            padding: 28px;
+        }
+
+        .program-content small {
+            color: var(--gold);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 10px;
+        }
+
+        .program-content h3 {
+            font-family: Georgia, serif;
+            font-size: 28px;
+            font-weight: 400;
+            margin: 8px 0;
+        }
+
+        .program-content p {
+            color: #756b62;
+            font-size: 14px;
+        }
+
+        .program-footer {
+            margin-top: 20px;
+            padding-top: 18px;
+            border-top: 1px solid #ded5c8;
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: #7a6e63;
+        }
+
+        .program-footer a {
+            color: var(--maroon);
+            font-weight: 700;
+        }
+
+
+        /* =========================================================
+           GURU SECTION
+        ========================================================= */
+
+        .gurus {
+            background: #211d1a;
+            color: white;
+        }
+
+        .gurus .section-title {
+            color: white;
+        }
+
+        .gurus .section-title span {
+            color: #d5b36d;
+        }
+
+        .gurus .section-text {
+            color: rgba(255,255,255,.62);
+        }
+
+        .guru-grid {
+            margin-top: 55px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .guru {
+            position: relative;
+            overflow: hidden;
+            min-height: 420px;
+            background: #322b26;
+        }
+
+        .guru img {
+            height: 100%;
+            min-height: 420px;
+            object-fit: cover;
+            filter: saturate(.82);
+            transition: .5s;
+        }
+
+        .guru:hover img {
+            transform: scale(1.05);
+        }
+
+        .guru::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                transparent 35%,
+                rgba(20,14,12,.92) 100%
+            );
+        }
+
+        .guru-info {
+            position: absolute;
+            z-index: 2;
+            left: 22px;
+            right: 22px;
+            bottom: 23px;
+        }
+
+        .guru-info h3 {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        .guru-info span {
+            color: #d4b978;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .guru-button {
+            display: block;
+            width: fit-content;
+            margin: 40px auto 0;
+            border: 1px solid #756144;
+            color: #d8bf86;
+        }
+
+
+        /* =========================================================
+           JOURNEY
+        ========================================================= */
+
+        .journey {
+            background: #f8f5ef;
+        }
+
+        .journey-grid {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            border-top: 1px solid #d8d0c4;
+            border-bottom: 1px solid #d8d0c4;
+        }
+
+        .journey-step {
+            padding: 45px 30px;
+            border-right: 1px solid #d8d0c4;
+            position: relative;
+        }
+
+        .journey-step:last-child {
+            border-right: none;
+        }
+
+        .step-number {
+            font-family: Georgia, serif;
+            color: var(--gold);
+            font-size: 17px;
+        }
+
+        .journey-step h3 {
+            font-family: Georgia, serif;
+            font-size: 26px;
+            font-weight: 400;
+            margin: 18px 0 12px;
+        }
+
+        .journey-step p {
+            color: #766b61;
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           WHY ARIFA
+        ========================================================= */
+
+        .why {
+            background: #eee7dc;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .why-image img {
+            height: 550px;
+            object-fit: cover;
+        }
+
+        .why-list {
+            margin-top: 35px;
+        }
+
+        .why-item {
+            display: grid;
+            grid-template-columns: 55px 1fr;
+            gap: 20px;
+            padding: 22px 0;
+            border-bottom: 1px solid #d6ccbe;
+        }
+
+        .why-number {
+            width: 42px;
+            height: 42px;
+            border: 1px solid var(--gold);
+            display: grid;
+            place-items: center;
+            color: var(--gold);
+            font-family: Georgia, serif;
+        }
+
+        .why-item h3 {
+            font-family: Georgia, serif;
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        .why-item p {
+            color: #756a60;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+
+        /* =========================================================
+           TESTIMONIALS
+        ========================================================= */
+
+        .testimonials {
+            background: white;
+        }
+
+        .testimonial-grid {
+            margin-top: 55px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .testimonial {
+            padding: 35px;
+            background: #f8f5ef;
+            border: 1px solid #e2dace;
+        }
+
+        .testimonial-stars {
+            color: var(--gold);
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial p {
+            color: #625950;
+            font-family: Georgia, serif;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .testimonial-user {
+            border-top: 1px solid #ddd3c5;
+            margin-top: 28px;
+            padding-top: 20px;
+        }
+
+        .testimonial-user strong {
+            display: block;
+            color: var(--maroon);
+        }
+
+        .testimonial-user span {
+            font-size: 11px;
+            color: #8a7d70;
+        }
+
+
+        /* =========================================================
+           FAQ
+        ========================================================= */
+
+        .faq {
+            background: #f1ebe2;
+        }
+
+        .faq-list {
+            max-width: 850px;
+            margin: 50px auto 0;
+        }
+
+        .faq-item {
+            border-top: 1px solid #d4cabd;
+        }
+
+        .faq-item:last-child {
+            border-bottom: 1px solid #d4cabd;
+        }
+
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+            padding: 24px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Georgia, serif;
+            font-size: 19px;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary span {
+            color: var(--gold);
+            font-size: 25px;
+        }
+
+        .faq-item p {
+            color: #70665d;
+            max-width: 750px;
+            padding-bottom: 25px;
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           CTA
+        ========================================================= */
+
+       .cta {
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+    background:
+        linear-gradient(
+             rgba(51,22,20,.82),
+             rgba(35,16,15,.9)
+        ),
+        url("https://images.unsplash.com/photo-1504609813442-a8924e83f76e?auto=format&fit=crop&w=2200&q=90")
+        center/cover no-repeat;
+}
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            width: min(800px, 90%);
+            margin: auto;
+        }
+
+        .cta h2 {
+            font-family: Georgia, serif;
+            font-weight: 400;
+            font-size: clamp(42px, 6vw, 72px);
+            line-height: 1.05;
+        }
+
+        .cta h2 span {
+            color: #d7b66e;
+            font-style: italic;
+        }
+
+        .cta p {
+            max-width: 580px;
+            margin: 22px auto 0;
+            color: rgba(255,255,255,.75);
+        }
+
+        .cta .hero-buttons {
+            justify-content: center;
+        }
+
+
+        /* =========================================================
+           CONTACT
+        ========================================================= */
+
+        .contact-strip {
+            background: #211d1a;
+            color: white;
+            padding: 60px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+        }
+
+        .contact-box {
+            padding: 10px 30px;
+            border-right: 1px solid rgba(255,255,255,.12);
+        }
+
+        .contact-box:last-child {
+            border: none;
+        }
+
+        .contact-box small {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #bca46d;
+            font-size: 10px;
+            margin-bottom: 8px;
+        }
+
+        .contact-box strong {
+            font-family: Georgia, serif;
+            font-size: 21px;
+            font-weight: 400;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            background: #151210;
+            color: white;
+            padding: 65px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.3fr;
+            gap: 50px;
+        }
+
+        .footer-logo {
+            font-family: Georgia, serif;
+            font-size: 28px;
+            letter-spacing: 3px;
+        }
+
+        .footer-brand p {
+            color: #958b81;
+            font-size: 13px;
+            max-width: 330px;
+            margin-top: 20px;
+        }
+
+        footer h3 {
+            font-family: Georgia, serif;
+            font-weight: 400;
+            color: #d5b36d;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: #aaa097;
+            font-size: 13px;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,.1);
+            margin-top: 50px;
+            padding-top: 22px;
+            display: flex;
+            justify-content: space-between;
+            color: #756d66;
+            font-size: 11px;
+        }
+
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+        @media (max-width: 760px) {
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .tradition-grid,
+            .why-grid {
+                gap: 45px;
+            }
+
+            .guru-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .program-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .journey-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .journey-step:nth-child(2) {
+                border-right: none;
+            }
+
+            .journey-step {
+                border-bottom: 1px solid #d8d0c4;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+
+        @media (max-width: 760px) {
+
+            .section {
+                padding: 75px 0;
+            }
+
+            .header {
+                  padding: 140px 6% 100px;
+            }
+
+            .menu {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 75px;
+                left: 4%;
+                right: 4%;
+                display: none;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                background: #211d1a;
+                padding: 15px;
+                box-shadow: 0 15px 40px rgba(0,0,0,.3);
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 14px;
+                border-bottom: 1px solid rgba(255,255,255,.08);
+            }
+
+            .hero {
+                min-height: 720px;
+                background-position: 65% center;
+            }
+
+            .hero h1 {
+                font-size: 52px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .tradition-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tradition-image img,
+            .why-image img {
+                height: 480px;
+            }
+
+            .image-card {
+                right: 10px;
+                bottom: -15px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stat {
+                border-bottom: 1px solid #d5cbbb;
+            }
+
+            .stat:nth-child(2) {
+                border-right: none;
+            }
+
+            .program-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .program-image {
+                height: 380px;
+            }
+
+            .guru-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .guru,
+            .guru img {
+                min-height: 350px;
+            }
+
+            .journey-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .journey-step {
+                border-right: none;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .contact-box {
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,.1);
+                padding-bottom: 20px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .guru-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat {
+                border-right: none;
+            }
+
+            .section-title {
+                font-size: 42px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="header">
+
+    <div class="nav">
+
+        <a href="#home" class="logo">
+            <span class="logo-main">ARIFA</span>
+            <span class="logo-sub">DANCE ACADEMY</span>
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="gallery.html">Leaders</a>
+            <a href="instructors.html">Journey</a>
+            <a href="contact.html">Contact</a>
+
+            <a href="enroll.html" class="nav-button">
+                Enroll Now
+            </a>
+
+        </nav>
+
+        <button class="menu" onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <p class="hero-small">
+            Welcome to Arifa Dance Academy
+        </p>
+
+        <h1>
+            Make Your Dance
+            <span>Dreams Come Alive</span>
+        </h1>
+
+        <p class="hero-description">
+            Discover the beauty of Indian classical dance and
+            contemporary movement in a space where tradition,
+            discipline and creativity come together.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="programs.html" class="btn btn-gold">
+                Explore Programs
+            </a>
+
+            <a href="contact.html" class="btn btn-outline">
+                Have Questions? Talk to Us
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-bottom">
+
+        <span>Scroll to explore</span>
+
+        <span class="hero-line"></span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TRUST
+========================================================= -->
+
+<section class="trust">
+
+    <div class="container">
+
+        <div class="trust-inner">
+
+            <strong>ARIFA DANCE ACADEMY</strong>
+
+            <span>
+                Classical • Contemporary • Culture • Confidence
+            </span>
+
+            <span>
+                Kurnool, Andhra Pradesh
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     ABOUT / TRADITION
+========================================================= -->
+
+<section class="section tradition" id="about">
+
+    <div class="container">
+
+        <div class="tradition-grid">
+
+            <div class="tradition-image">
+
+                <img
+                    src="dance-pose.jpg.png"
+                    alt="Indian classical dance"
+                >
+
+                <div class="image-card">
+
+                    <strong>Dance</strong>
+
+                    <span>
+                        Tradition in Motion
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="tradition-copy">
+
+                <div class="rating">
+
+                    <div class="rating-number">
+                        4.9
+                    </div>
+
+                    <div>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <small>
+                            Excellence through dedication
+                        </small>
+
+                    </div>
+
+                </div>
+
+                <p class="eyebrow">
+                    Preserving Tradition
+                </p>
+
+                <h2 class="section-title">
+                    Rooted in Tradition,
+                    <span>Growing Through Dance</span>
+                </h2>
+
+                <p>
+                    Arifa Dance Academy brings together the timeless
+                    beauty of Indian dance with a modern learning
+                    experience designed for today's students.
+                </p>
+
+                <p>
+                    We believe dance is more than steps and choreography.
+                    It teaches discipline, expression, confidence,
+                    culture and the ability to tell a story without words.
+                </p>
+
+                <a href="#programs" class="link-arrow">
+                    Discover our programs →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat">
+                <strong>500+</strong>
+                <span>Students We Aim To Inspire</span>
+            </div>
+
+            <div class="stat">
+                <strong>10+</strong>
+                <span>Dance Styles</span>
+            </div>
+
+            <div class="stat">
+                <strong>100%</strong>
+                <span>Passion For Dance</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     PROGRAMS
+========================================================= -->
+
+<section class="section programs" id="programs">
+
+    <div class="container">
+
+        <div class="heading-center">
+
+            <p class="eyebrow">
+                Our Programs
+            </p>
+
+            <h2 class="section-title">
+                Authentic
+                <span>Dance Styles</span>
+            </h2>
+
+            <p class="section-text">
+                Explore a carefully designed collection of classical
+                and contemporary dance programs. Begin as a beginner,
+                develop your technique and grow into a confident performer.
+            </p>
+
+        </div>
+
+
+        <div class="program-grid">
+
+
+            <article class="program">
+
+                <div class="program-image">
+
+                    <img
+                        src="gallery-1.jpg"
+                        alt="Bharatanatyam"
+                    >
+
+                </div>
+
+                <div class="program-content">
+
+                    <small>Classical Dance</small>
+
+                    <h3>Bharatanatyam</h3>
+
+                    <p>
+                        Graceful movements, rhythm, expressions and
+                        storytelling rooted in Indian classical tradition.
+                    </p>
+
+                    <div class="program-footer">
+
+                        <span>
+                            Structured Training
+                        </span>
+
+                        <a href="#contact">
+                            Enquire →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="program">
+
+                <div class="program-image">
+
+                    <img
+                        src="kathak.jpg"
+                        alt="Kathak"
+                    >
+
+                </div>
+
+                <div class="program-content">
+
+                    <small>Classical Dance</small>
+
+                    <h3>Kathak</h3>
+
+                    <p>
+                        Discover rhythm, spins, expressive storytelling
+                        and the graceful vocabulary of Kathak.
+                    </p>
+
+                    <div class="program-footer">
+
+                        <span>
+                            Beginner Friendly
+                        </span>
+
+                        <a href="#contact">
+                            Enquire →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="program">
+
+                <div class="program-image">
+
+                    <img
+                        src="bollywood.jpg"
+                        alt="Bollywood dance"
+                    >
+
+                </div>
+
+                <div class="program-content">
+
+                    <small>Contemporary</small>
+
+                    <h3>Bollywood</h3>
+
+                    <p>
+                        Energetic choreography combining rhythm,
+                        expression and the vibrant spirit of Bollywood.
+                    </p>
+
+                    <div class="program-footer">
+
+                        <span>
+                            Performance Style
+                        </span>
+
+                        <a href="#contact">
+                            Enquire →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="program">
+
+                <div class="program-image">
+
+                    <img
+                        src="hip hop.jpg"
+                        alt="Hip Hop dance"
+                    >
+
+                </div>
+
+                <div class="program-content">
+
+                    <small>Modern Dance</small>
+
+                    <h3>Hip-Hop</h3>
+
+                    <p>
+                        Build confidence, musicality and individuality
+                        through energetic modern movement.
+                    </p>
+
+                    <div class="program-footer">
+
+                        <span>
+                            High Energy
+                        </span>
+
+                        <a href="#contact">
+                            Enquire →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="program">
+
+                <div class="program-image">
+
+                    <img
+                        src="mohiniyattam.jpg"
+                        alt="Mohiniyattam inspired dance"
+                    >
+
+                </div>
+
+                <div class="program-content">
+
+                    <small>Classical Dance</small>
+
+                    <h3>Mohiniyattam</h3>
+
+                    <p>
+                        Experience graceful movements, subtle expressions
+                        and the elegant tradition of Kerala.
+                    </p>
+
+                    <div class="program-footer">
+
+                        <span>
+                            Classical Training
+                        </span>
+
+                        <a href="#contact">
+                            Enquire →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="program">
+
+                <div class="program-image">
+
+                    <img
+                        src="kuchipudi.jpg"
+                        alt="Dance and music"
+                    >
+
+                </div>
+
+                <div class="program-content">
+
+                    <small>Music & Rhythm</small>
+
+                    <h3>Kuchipudi</h3>
+
+                    <p>
+                        Build a strong understanding of rhythm,
+                        musicality and the cultural roots of performance.
+                    </p>
+
+                    <div class="program-footer">
+
+                        <span>
+                            Cultural Learning
+                        </span>
+
+                        <a href="#contact">
+                            Enquire →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     GURUS
+========================================================= -->
+
+<section class="section gurus" id="gurus">
+
+    <div class="container">
+
+        <p class="eyebrow">
+            Learn From The Masters
+        </p>
+
+        <h2 class="section-title">
+            Meet Our
+            <span>Dance Gurus</span>
+        </h2>
+
+        <p class="section-text">
+            Dedicated instructors who help students discover technique,
+            expression, discipline and confidence through dance.
+        </p>
+
+
+        <div class="guru-grid">
+
+
+            <article class="guru">
+
+                <img
+                    src="bhartanatyam-master.jpg"
+                    alt="Dance Guru"
+                >
+
+                <div class="guru-info">
+
+                    <h3>Classical Dance Guru</h3>
+
+                    <span>Bharatanatyam</span>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="guru">
+
+                <img
+                    src="master-kathak.jpg"
+                    alt="Kathak Guru"
+                >
+
+                <div class="guru-info">
+
+                    <h3>Classical Dance Guru</h3>
+
+                    <span>Kathak</span>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="guru">
+
+                <img
+                    src="bollywood-master.jpg"
+                    alt="Dance Instructor"
+                >
+
+                <div class="guru-info">
+
+                    <h3>Performance Mentor</h3>
+
+                    <span>Bollywood</span>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="guru">
+
+                <img
+                    src="hiphop-master.jpg"
+                    alt="Modern Dance Instructor"
+                >
+
+                <div class="guru-info">
+
+                    <h3>Dance Instructor</h3>
+
+                    <span>Hip-Hop & Freestyle</span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     JOURNEY
+========================================================= -->
+
+<section class="section journey" id="journey">
+
+    <div class="container">
+
+        <div class="heading-center">
+
+            <p class="eyebrow">
+                Your Dance Journey
+            </p>
+
+            <h2 class="section-title">
+                Learn.
+                <span>Grow. Perform.</span>
+            </h2>
+
+            <p class="section-text">
+                A simple and structured journey that helps every student
+                move from discovering dance to performing with confidence.
+            </p>
+
+        </div>
+
+
+        <div class="journey-grid">
+
+            <div class="journey-step">
+
+                <span class="step-number">
+                    STEP 01
+                </span>
+
+                <h3>Discover</h3>
+
+                <p>
+                    Explore your interests, choose your dance style
+                    and understand your learning goals.
+                </p>
+
+            </div>
+
+
+            <div class="journey-step">
+
+                <span class="step-number">
+                    STEP 02
+                </span>
+
+                <h3>Learn</h3>
+
+                <p>
+                    Build strong foundations through regular practice,
+                    rhythm training and guided instruction.
+                </p>
+
+            </div>
+
+
+            <div class="journey-step">
+
+                <span class="step-number">
+                    STEP 03
+                </span>
+
+                <h3>Develop</h3>
+
+                <p>
+                    Improve technique, expressions, musicality,
+                    creativity and stage confidence.
+                </p>
+
+            </div>
+
+
+            <div class="journey-step">
+
+                <span class="step-number">
+                    STEP 04
+                </span>
+
+                <h3>Perform</h3>
+
+                <p>
+                    Take your learning to the stage and express
+                    your story through confident performance.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     WHY ARIFA
+========================================================= -->
+
+<section class="section why">
+
+    <div class="container">
+
+        <div class="why-grid">
+
+            <div class="why-image">
+
+                <img
+                    src="dance-class.jpg"
+                    alt="Arifa Dance Academy training"
+                >
+
+            </div>
+
+
+            <div>
+
+                <p class="eyebrow">
+                    Why Arifa Dance Academy
+                </p>
+
+                <h2 class="section-title">
+                    More Than
+                    <span>Dance Classes</span>
+                </h2>
+
+                <p class="section-text">
+                    We aim to create an environment where students
+                    can learn the art of dance while developing
+                    confidence, discipline and creativity.
+                </p>
+
+
+                <div class="why-list">
+
+                    <div class="why-item">
+
+                        <div class="why-number">
+                            01
+                        </div>
+
+                        <div>
+
+                            <h3>Structured Learning</h3>
+
+                            <p>
+                                Clear progression from beginner
+                                foundations to advanced performance.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="why-item">
+
+                        <div class="why-number">
+                            02
+                        </div>
+
+                        <div>
+
+                            <h3>Personal Guidance</h3>
+
+                            <p>
+                                Focused attention to help students
+                                improve their individual skills.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="why-item">
+
+                        <div class="why-number">
+                            03
+                        </div>
+
+                        <div>
+
+                            <h3>Culture & Expression</h3>
+
+                            <p>
+                                Understand the stories, traditions and
+                                emotions behind every movement.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="why-item">
+
+                        <div class="why-number">
+                            04
+                        </div>
+
+                        <div>
+
+                            <h3>Performance Confidence</h3>
+
+                            <p>
+                                Opportunities to build stage presence
+                                and express yourself with confidence.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     TESTIMONIALS
+========================================================= -->
+
+<section class="section testimonials">
+
+    <div class="container">
+
+        <div class="heading-center">
+
+            <p class="eyebrow">
+                Student Experiences
+            </p>
+
+            <h2 class="section-title">
+                Loved By
+                <span>Our Community</span>
+            </h2>
+
+        </div>
+
+
+        <div class="testimonial-grid">
+
+
+            <article class="testimonial">
+
+                <div class="testimonial-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “The academy creates such a positive environment.
+                    I feel more confident every time I learn and perform.”
+                </p>
+
+                <div class="testimonial-user">
+
+                    <strong>
+                        Academy Student
+                    </strong>
+
+                    <span>
+                        Classical Dance Program
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="testimonial">
+
+                <div class="testimonial-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “The classes make learning dance enjoyable while
+                    also teaching discipline and the importance of
+                    practice.”
+                </p>
+
+                <div class="testimonial-user">
+
+                    <strong>
+                        Parent
+                    </strong>
+
+                    <span>
+                        Arifa Dance Academy
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="testimonial">
+
+                <div class="testimonial-stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    “I always wanted to learn dance. The academy helped
+                    me start from the basics and slowly build confidence.”
+                </p>
+
+                <div class="testimonial-user">
+
+                    <strong>
+                        Academy Student
+                    </strong>
+
+                    <span>
+                        Beginner Program
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="section faq">
+
+    <div class="container">
+
+        <div class="heading-center">
+
+            <p class="eyebrow">
+                Have Questions?
+            </p>
+
+            <h2 class="section-title">
+                We've Got
+                <span>Answers</span>
+            </h2>
+
+            <p class="section-text">
+                Find quick answers about classes, programs,
+                beginners and enrollment.
+            </p>
+
+        </div>
+
+
+        <div class="faq-list">
+
+
+            <details class="faq-item">
+
+                <summary>
+                    Who can join Arifa Dance Academy?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Children, teenagers and adults can enquire about
+                    our programs. Beginners are welcome.
+                </p>
+
+            </details>
+
+
+            <details class="faq-item">
+
+                <summary>
+                    Do I need previous dance experience?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    No. Beginners can start with basic movements,
+                    rhythm and technique before progressing further.
+                </p>
+
+            </details>
+
+
+            <details class="faq-item">
+
+                <summary>
+                    Which dance styles are available?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Our programs include Bharatanatyam, Kathak,
+                    Mohiniyattam, Bollywood, Hip-Hop and Carnatic Music.
+                </p>
+
+            </details>
+
+
+            <details class="faq-item">
+
+                <summary>
+                    Where is Arifa Dance Academy located?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Arifa Dance Academy is located in Kurnool,
+                    Andhra Pradesh.
+                </p>
+
+            </details>
+
+
+            <details class="faq-item">
+
+                <summary>
+                    How can I enquire about admission?
+                    <span>+</span>
+                </summary>
+
+                <p>
+                    Call us directly at 9666122173 or use the
+                    enquiry button below.
+                </p>
+
+            </details>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+
+<section class="cta" id="enroll">
+
+    <div class="cta-content">
+
+        <p class="eyebrow">
+            Begin Your Dance Journey
+        </p>
+
+        <h2>
+            Your Story.
+            <span>Your Rhythm.</span>
+        </h2>
+
+        <p>
+            Take your first step with Arifa Dance Academy
+            and discover the joy of movement.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="tel:9666122173" class="btn btn-gold">
+                Call 9666122173
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                Contact Academy
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONTACT STRIP
+========================================================= -->
+
+<section class="contact-strip" id="contact">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+            <div class="contact-box">
+
+                <small>
+                    Phone
+                </small>
+
+                <strong>
+                    9666122173
+                </strong>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <small>
+                    Location
+                </small>
+
+                <strong>
+                    Kurnool, Andhra Pradesh
+                </strong>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <small>
+                    Admission
+                </small>
+
+                <strong>
+                    Enquire Today
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    ARIFA
+                </div>
+
+                <p>
+                    Arifa Dance Academy is dedicated to inspiring
+                    students through classical tradition,
+                    creative expression and the joy of movement.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Academy
+                </h3>
+
+                <div class="footer-links">
+
+                    <a href="#about">
+                        About Us
+                    </a>
+
+                    <a href="#programs">
+                        Programs
+                    </a>
+
+                    <a href="#gurus">
+                        Our Gurus
+                    </a>
+
+                    <a href="#journey">
+                        Your Journey
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Programs
+                </h3>
+
+                <div class="footer-links">
+
+                    <a href="#programs">
+                        Bharatanatyam
+                    </a>
+
+                    <a href="#programs">
+                        Kathak
+                    </a>
+
+                    <a href="#programs">
+                        Bollywood
+                    </a>
+
+                    <a href="#programs">
+                        Hip-Hop
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <div class="footer-links">
+
+                    <a href="tel:9666122173">
+                        9666122173
+                    </a>
+
+                    <a href="#contact">
+                        Kurnool
+                    </a>
+
+                    <a href="#contact">
+                        Andhra Pradesh
+                    </a>
+
+                    <a href="#enroll">
+                        Enroll Now
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Arifa Dance Academy. All Rights Reserved.
+            </span>
+
+            <span>
+                B.Tech 3rd Year Project
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+    function toggleMenu() {
+
+        const nav = document.getElementById("navLinks");
+
+        nav.classList.toggle("show");
+
+    }
+
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            document
+                .getElementById("navLinks")
+                .classList.remove("show");
+
+        });
+
+    });
+
+
+    document.querySelectorAll(".faq-item").forEach(function(item) {
+
+        item.addEventListener("toggle", function() {
+
+            const symbol = item.querySelector("summary span");
+
+            if (item.open) {
+                symbol.textContent = "−";
+            } else {
+                symbol.textContent = "+";
+            }
+
+        });
+
+    });
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>
